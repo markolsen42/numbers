@@ -11,7 +11,6 @@ public numerator:number = 2;
   public denominator:number = 1;
   public isDivisible:boolean = true;
   public factors:number[] = [];
-  public isPrime: boolean = true;
 
   constructor() { }
 
@@ -22,7 +21,6 @@ public numerator:number = 2;
   doCalculations(){
     this.calculateDivisible();
     this.calculateFactors();
-    this.calculateIsPrime()
   }
 
   calculateDivisible(){
@@ -39,8 +37,8 @@ public numerator:number = 2;
     this.factors.push(this.numerator);
   }
 
-  calculateIsPrime(){
-    this.isPrime = this.factors.length==2;
+  isPrime():boolean{
+    return this.factors.length==2;
   }
 
 
