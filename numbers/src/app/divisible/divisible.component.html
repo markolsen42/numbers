@@ -1,3 +1,11 @@
+<h1>Divisible/Factors</h1>
 <p>
-  divisible works!
+  is a divisible by b  - written a|b?  This means that a%b==0
 </p>
+<h3> is <input [(ngModel)]="numerator" (ngModelChange)="doCalculations()" placeholder="{{numerator}}"/> divisible by <input [(ngModel)]="denominator" (ngModelChange)="calculateDivisible()" placeholder="{{denominator}}"/> ? </h3>
+<h2>{{isDivisible}}</h2>
+<p>if a is divisible by b then b is a factor of a. Here are all the factors of {{numerator}}</p>
+<h3>{{factors}}</h3>
+<p>If the only factors of a number are 1 and that number itself it is called a prime</p>
+<p> is {{numerator}} prime ? {{isPrime}}</p>
+
