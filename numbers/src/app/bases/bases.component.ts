@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasesComponent implements OnInit {
 
-  public value:number=100;
+  public value:string= "100";
   convertedValue:string;
 
   constructor() { }
@@ -16,9 +16,7 @@ export class BasesComponent implements OnInit {
   }
 
   convertFromDecimal(radix: number):string {
-    console.log(this.value.toString(16));
-    this.convertedValue = this.value.toString(16);
-    return this.value.toString(16);
+    return new Number(parseInt(this.value)).toString(radix);
   }
 
 
