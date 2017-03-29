@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { DivisibleComponent } from './divisible/divisible.component';
+import { BasesComponent } from './bases/bases.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DivisibleComponent
+    DivisibleComponent,
+    BasesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<h1>Different Bases</h1>
+<p>
+  Numbers can be expressed in different bases - we use decimal or base 10 notation but bases 2,8 and 16 are commonly used.
+</p>
+<input [(ngModel)]="value" (ngModelChange)="convertFromDecimal(2)" placeholder="{{value}}"/>
+convert to base 2 {{convertFromDecimal(2)}}<br/>{{convertedValue}}
